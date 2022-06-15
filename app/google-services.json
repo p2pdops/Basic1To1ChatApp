@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "152536935797",
+    "project_id": "androidchatapp-3cce9",
+    "storage_bucket": "androidchatapp-3cce9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152536935797:android:a3e682b1afdd2d25a7b73c",
+        "android_client_info": {
+          "package_name": "p2pdops.basicchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152536935797-a5u2ol929fb94ndbn637r2vnojg1scdt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5oTgi_mjaV0KZUXFd93YdzVcMhFEgxgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152536935797-a5u2ol929fb94ndbn637r2vnojg1scdt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

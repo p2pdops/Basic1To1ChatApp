@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">U Messenger</string>
+
+    <string name="app_title">U Messenger</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="read_it_together">Connecting users across world!</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forget Password.?</string>
+</resources>
