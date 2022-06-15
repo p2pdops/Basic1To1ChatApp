@@ -47,7 +47,10 @@ class MessagesActivity : AppCompatActivity() {
                         timestamp = Timestamp.now()
                     )
                 ).addOnSuccessListener {
-                    runOnUiThread { refreshMessages() }
+                    runOnUiThread {
+                        refreshMessages()
+                        findViewById<EditText>(R.id.message_et).setText("")
+                    }
                 }
         }
     }
@@ -58,7 +61,7 @@ class MessagesActivity : AppCompatActivity() {
             .get().addOnSuccessListener { snapshot ->
                 val messages = snapshot.documents.map { it.toObject(MMessage::class.java)!! }
                 val filteredMsgs = messages.filter { it.uids.containsAll(listOf(myUid, frndUid)) }
-                    .sortedBy { it.timestamp.toDate().time }
+                    .sortedByDescending { it.timestamp.toDate().time }
                 Log.d(TAG, "onResume: retrieved messages: $messages")
                 runOnUiThread {
                     adapter.setMessages(filteredMsgs)

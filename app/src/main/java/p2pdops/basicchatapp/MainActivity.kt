@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 Log.d(TAG, "onResume: retrieved users: $users")
                 runOnUiThread {
-                    adapter.setUsers(users)
+                    adapter.setUsers(users.filter { it.uid != mAuth!!.uid!! })
                 }
             }
     }
